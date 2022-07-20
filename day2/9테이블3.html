@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Day2_표3</title>
+    <style>
+    td{
+        padding: 10px 20px;
+        border-collapse: collapse;
+        text-align: center;
+        border: 2px solid black;
+        background-color: beige;
+    }
+    th{
+        padding: 20px 20px;
+        border-collapse: collapse;
+        text-align: center;
+        border: 2px solid black;
+        background-color: gold;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+    }
+    td.address{
+        color: blue;
+    }
+    td.time{
+        color: green;
+    }
+    h3{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        background-color: rosybrown;
+    }
+    </style>
+</head>
+<body>
+    <!-- 1) 칸 합치기 colspan, rowspan 연습 -->
+    <h3>주소별 회원 조회</h3>
+    <table style="width:80%; margin: auto;">
+  <tr>
+      <th>주소</th>
+    <th colspan="2">이름</th>
+  </tr>
+  <tr>
+    <td class="address">서울시 종로구 종로3가</td>
+    <td>홍길동</td>
+    <td>김모모</td>
+  </tr>
+  <tr>
+    <td class="address">경기도 성남시 분당구</td>
+    <td>도봉순</td>
+    <td>이길순</td>
+  </tr>
+</table>
+    <!-- 2) 시간표 작성하기 : colspan, rowspan 활용 -->
+    <h3>수업 시간표</h3>
+<table style="width:80%; margin: auto;">
+    <tr>
+        <th>시간</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+        <th>목요일</th>
+        <th>금요일</th>
+    </tr>
+    <tr>
+        <td class="time">8:00~8:50</td>
+        <td rowspan="2">수학</td>
+        <td>과학</td>
+        <td>한국사</td>
+        <td>영어</td>
+        <td>국어</td>
+    </tr>
+    <tr>
+        <td class="time">9:00~9:50</td>
+        <td>일본어</td>
+        <td>영어</td>
+        <td rowspan="2">프로그래밍</td>
+        <td>수학</td>
+    </tr>
+    <tr>
+        <td class="time">10:00~10:50</td>
+        <td>국어</td>
+        <td>음악</td>
+        <td>수학</td>
+        <td>체육</td>
+    </tr>
+    <tr>
+        <td class="time">11:00~11:50</td>
+        <td>영어</td>
+        <td>한국사</td>
+        <td>체육</td>
+        <td>음악</td>
+        <td>과학</td>
+    </tr>
+    <tr>
+        <td class="time">12:00~13:00</td>
+        <td colspan="6">점심시간</td>
+    </tr>
+ </table>
+</body>
+</html>
