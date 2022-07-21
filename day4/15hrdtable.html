@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원목록조회/수정</title> 
+    <style>
+        .header{
+            background-color: cadetblue;
+            color: white;
+            padding: 40px 20px;
+            margin-left: -10px;
+            margin-top: -20px;
+        } 
+        h3{
+            text-align: center;
+        }
+        .nav{
+
+        }
+        body{
+            width: 100%;
+        }
+        ul{
+            /* border: 1px solid gray; */
+            list-style: none;
+            background-color: darkcyan;
+            overflow: hidden;
+            margin: auto;
+            margin-left: -10px;
+        }
+        ul > li {
+            float: left;
+            /* border: 1px solid black; */
+        }
+        /* 위의 border로 영역 확인 : nav, ul 영역이 li 영억보다 작음 */
+        ul > li a{
+            display: block;
+            color: aliceblue;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        ul > li a:hover{
+            background-color: aquamarine;
+            color: gray;
+        }
+    .main{
+    background-color: azure;
+    padding: 20px;
+    height: 500px;
+    margin-left: -10px;
+    }
+    .footer{
+        background-color: cornflowerblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-left: -10px;
+    }
+        body{
+            background-color: lightgray;
+        }
+        table{
+            border: 1px solid gray;
+        }
+        th,td{
+            border: 1px solid gray;
+            text-align: center;
+        }
+        td.no{
+            color: white;
+        }
+        h3{
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <!-- header -->
+    <h3 style="text-align: center;">홈쇼핑 회원관리 v1.0</h3>
+</div>
+<div class="nav">
+    <!-- nav -->
+    <ul>
+        <li><a href="http://127.0.0.1:5500/day4/14hrdform.html">회원등록</a></li>
+        <li><a href="http://127.0.0.1:5500/day4/15hrdtable.html">회원목록조회</a></li>
+        <li><a href="">회원매출조회</a></li>
+        <li><a href="http://127.0.0.1:5500/day4/17weblayout.html">홈으로</a></li>
+    </ul>
+</div>
+<div class="main">
+<h3>회원목록조회/수정</h3>
+    <table style="width:80%; margin: auto;">
+        <tr>
+            <th>회원번호</th>
+            <th>회원성명</th>
+            <th>전화번호</th>
+            <th>주소</th>
+            <th>가입일자</th>
+            <th>고객등급</th>
+            <th>거주지역</th>
+        </tr>
+        <tr>
+            <td class="no">100001</td>
+            <td>김행복</td>
+            <td>010-1111-2222</td>
+            <td>서울 동대문구 휘경동</td>
+            <td>2015-12-02</td>
+            <td>VIP</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td class="no">100002</td>
+            <td>이축복</td>
+            <td>010-1111-3333</td>
+            <td>서울 동대문구 휘경동</td>
+            <td>2015-12-06</td>
+            <td>일반</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td class="no">100003</td>
+            <td>장믿음</td>
+            <td>010-1111-4444</td>
+            <td>울릉군 울릉읍 독도1리</td>
+            <td>2015-10-01</td>
+            <td>일반</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td class="no">100004</td>
+            <td>최사랑</td>
+            <td>010-1111-5555</td>
+            <td>울릉군 울릉읍 독도2리</td>
+            <td>2015-11-13</td>
+            <td>VIP</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td class="no">100005</td>
+            <td>진평화</td>
+            <td>010-1111-6666</td>
+            <td>제주도 제주시 외나무골</td>
+            <td>2015-12-25</td>
+            <td>일반</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td class="no">100006</td>
+            <td>차공단</td>
+            <td>010-1111-7777</td>
+            <td>제주도 제주시 감나무골</td>
+            <td>2015-12-11</td>
+            <td>직원</td>
+            <td>60</td>
+        </tr>
+    </table>
+</div>
+    <div class="footer">
+        <!-- footer -->
+        HRDKOREA Copyright&copy;2022 All rights reserved. Human Resources Development Service
+        of Korea
+    </div>       
+    </body>
+</html>
