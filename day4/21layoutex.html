@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Da4_레이아웃ex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Jua', sans-serif;
+            padding: 10px;
+            background-color: white;
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: teal;
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: mediumturquoise;
+            color: green;
+        }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .fakeimg{
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: teal;
+            color: white;
+            margin-top: 20px;
+        }
+        img.img{
+            width: 400px;
+            height: auto;
+        }
+        img.im{
+            width: 180px;
+            height: 180px;
+        }
+        @media screen and (max-width: 400px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .topnav{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>OOO의 블로그</h1>
+</div>
+
+<div class="topnav">
+    <a href="">프롤로그</a>
+    <a href="">블로그</a>
+    <a href="" style="float: right;">라이브러리</a>
+    <a href="" style="float: right;">게스트</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>웹방화벽이란?</h2>
+        <div class="fakeimg">
+            <a href=""></a> 
+        <img class="img" src="/images/웹방화벽3.png" alt="웹방화벽">
+        </div>
+        <p> 웹방화벽(Web Application Firewall)이란 일반적인 네트워크 방화벽과는 달리 웹 어플리케이션 보안을 위한 솔루션이다.<br>
+            HTTP 트래픽을 검사하여 보호 대상 홈페이지 서버로 유입되는 해킹을 차단하는 정보 보호 시스템이다.<br>
+            OSI 7계층 중 응용 계층(Application Layer)에 속하며 SQL Injection, XSS 등과 같은 웹 공격을 탐지하고 차단하는 것이다.<br>
+            직접적인 웹 공격 대응 이 외에도, 정보유출 방지 솔루션, 웹 사이트 위변조방지 솔루션 등으로 활용이 가능하다.</p>
+      </div>
+      <div class="card">
+        <h2>IP란?</h2>
+        <div class="fakeimg">
+            <img class="img" src="/images/ip.jpeg" alt="ip">
+        </div>
+        <p>인터넷 프로토콜(Internet Protocol)의 약자로 컴퓨터 네트워크에서 장치들이 서로를 인식하고 통신을 하기 위해서 사용하는 특수한 번호이다.<br>
+            이 번호를 이용하여 발신자를 대신하여 메시지가 전송되고 수신자를 향하여 예정된 목적지로 전달된다.<br> 
+            IP 주소를 줄여서 IP라고 부르기도 하나 IP는 인터넷 규약 자체를 가리키는 말이기 때문에 엄밀하게는 구별해야 한다. IP 와 IP 주소는 다른 개념이다.<br>
+            IP주소는 IPv4, IPv6 2가지 종류가 있으며, 일반적으로 IP 주소라 하면 IPv4 주소를 말한다.<br>
+            IP는 OSI 7계층 중 네트워크 계층(Network Layer)에 위치하는 프로토콜이다.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>프로필</h2>
+        <div class="fakeimg">
+            <img class="im" src="/images/코딩 프로필.jpeg" alt="프로필 사진">
+        </div>
+        <p>OOO(asd123**)</p>
+        <p>개인블로그 입니다.</p>
+      </div>
+      <div class="card">
+        <h3>인기게시글</h3>
+        <h5>웹방화벽이란?</h5>
+        <div class="fakeimg">
+            <img class="im" src="/images/웹방화벽3.png" alt="웹방화벽">
+            <p>웹방화벽(Web Application Firewall)이란 일반적인 네트워크 방화벽과는 달리...</p>
+        </div>
+        <h5>IP란?</h5>
+        <div class="fakeimg">
+            <img class="im" src="/images/ip.jpeg" alt="ip">
+            <p>인터넷 프로토콜(Internet Protocol)의 약자로 컴퓨터 네트워크에서 장치들이...</p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>오늘의 방문자 수</h3>
+        <p>today 40</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>모바일 버전으로 보기</h2>
+  </div>
+</body>
+</html>
