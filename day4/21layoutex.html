@@ -9,6 +9,8 @@
     <style>
         *{
             box-sizing: border-box;
+            /* box-model의 크기 = width + padding*2 + border-width*2 */
+            /* box-sizing: border-box;는 whidth 설정되는 값이 padding, 테두리를 포함 */
         }
         body{
             font-family: 'Jua', sans-serif;
@@ -58,10 +60,11 @@
             padding: 20px;
             margin-top: 20px;
         }
+        /* pseudo 요소 : ::after, ::befor  */
         .row::after{
             content: "";
             display: table;
-            clear: both;
+            clear: both; /* float:left 를 클리어 */
         }
         .footer{
             padding: 20px;
@@ -78,14 +81,18 @@
             width: 180px;
             height: 180px;
         }
-        @media screen and (max-width: 400px) {
+        /* 반응형 레이아웃 : flexbox */
+        /* Reponsive layout : 반응형
+        너비가 0x ~800px 는 아래의 스타일을 적용 */
+        @media screen and (max-width: 800px) {
             .leftcolumn, .rightcolumn {
                 width: 100%;
                 padding: 0;
             }
         }
+        /* 너비가 0x ~ 400px 는 아래의 스타일을 적용 */
         @media screen and (max-width: 400px) {
-            .topnav{
+            .topnav a{
                 float: none;
                 width: 100%;
             }
